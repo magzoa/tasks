@@ -1,0 +1,8 @@
+composer create-project --prefer-dist laravel/laravel tasks "5.4.*"
+php artisan app:name Tasks
+php artisan make:migration create_tasks_table
+php artisan migrate
+php artisan make:model Tasks
+php artisan make:controller TasksController
+
+Schema::defaultStringLength(191);
