@@ -22,4 +22,4 @@ Route::get('tasks','TasksController@getAll')->name('getAllTasks');
 Route::post('tasks','TasksController@add')->name('addTasks');
 Route::get('tasks/{id}','TasksController@get')->name('getTasks');
 Route::post('tasks/{id}','TasksController@edit')->name('editTasks');
-Route::get('tasks/delete/{id}','TasksController@delete')->name('deleteTasks');
+Route::get('tasks/eliminar/{id}','TasksController@delete')->name('deleteTasks');
